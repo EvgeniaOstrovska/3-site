@@ -1,0 +1,28 @@
+blockquote {
+	position: relative;
+	width: 333px;
+}
+
+blockquote::before,
+blockquote::after {
+	display: block;
+	color: #8A0000;
+	font-size: 50px;
+	position: absolute;
+}
+
+blockquote::before {
+	content: "\00AB";
+	left: -25px;
+	top: -20px ;
+}
+
+blockquote::after {
+	bottom: -16px;
+	content: "\00BB";
+	right: -25px;
+}
+
+p {
+	padding-left: 22px;
+}
